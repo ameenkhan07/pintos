@@ -428,7 +428,7 @@ thread_set_priority (int new_priority)
     list_insert_ordered(&ready_list, &t->elem, high_priority_condition, NULL);
   }
   //t->priority = new_priority;
-  //thread_update_priority_and_yeild(t);
+  thread_update_priority_and_yeild(t);
   //Added code ends
 }
 
